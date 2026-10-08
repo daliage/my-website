@@ -4,14 +4,14 @@ body {
   display: grid;
   place-items: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #1d1611;
+  background: #241b15;
   color: #f5eedc;
 }
 
 main {
   max-width: 48rem;
   padding: 2rem;
-  background: #111924;
+  background: #1d2a3d;
   border: 2px solid #3a5057;
   border-radius: 8px;
 }
@@ -41,4 +41,16 @@ ul {
   display: flex;
   gap: 1.25rem;
   margin-top: 1.5rem;
+}
+
+img {
+    border: 2px solid #3a5057;
+    border-radius:8px
+}
+
+button {
+    margin-left: 1rem;
+    padding: 0.25em;
+    border: 2px solid #3a5057;
+    border-radius:8px   
 }
