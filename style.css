@@ -54,3 +54,7 @@ button {
     border: 2px solid #3a5057;
     border-radius:8px   
 }
+
+li {
+    margin-left: 3rem;
+}
