@@ -4,25 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BOO!</title>
-  <link rel="stylesheet" href="homepage.css">
+  <link id="theme" rel="stylesheet" href="homepage.css">
 </head>
 <body>
   <main>
     <h1>Hey, I'm Colt ✝️</h1>
     <p>This is the intro website thing I'm making for Hack Club Pixl. In the past, I've always preferred to work on hardware over software, so I'm hoping that Pixl will both help me expand my horizons (the prizes are a fun bonus too 👀) <br> <br> <sub> I use arch btw</sub></p>
     <ul>
-      <a href="portfolio.html">Image Portfolio</a>
-      <a href="https://github.com/daliage" target="_blank">My GitHub (likely just a bunch of Pixl stuff)</a>
-      <a href="https://pixl.hackclub.com" target="_blank">Hack Club Pixl</a>
+      <li><a href="portfolio.html">Image Portfolio</a></li>
+      <li><a href="https://github.com/daliage" target="_blank">My GitHub (likely just a bunch of Pixl stuff)</a></li>
+      <li><a href="https://pixl.hackclub.com" target="_blank">Hack Club Pixl</a></li>
     </ul>
     <br>
-    <button> DON'T PRESS THIS DON'T  DO IT NO NO NO</button>
+    <button onclick="maketextappear()"> DON'T PRESS THIS DON'T  DO IT NO NO NO</button>
+    <p id="button"></p>
+    <script>
+      function maketextappear() {
+        if (document.getElementById("button").innerHTML == "") {
+          document.getElementById("button").innerHTML = "Great, now I have to learn Javascript. Look what you've done!"
+        } else if (document.getElementById("button").innerHTML == "Great, now I have to learn Javascript. Look what you've done!") {
+          document.getElementById("button").innerHTML = "STOP HITTING THIS!!!"
+        } else if (document.getElementById("button").innerHTML == "STOP HITTING THIS!!!") {
+          document.getElementById("button").innerHTML = "Some people just want to watch the world burn :("
+        } else {
+          document.getElementById("button").innerHTML = ""
+        }
+      }
+    </script>
     <br>
-    <h2>I got this wonderful screenshot when learning html for this website:<br></h2>
+    <h2>I got this wonderful screenshot when learning basic html for this website:<br></h2>
     <img src="images/ohhhhh.png" alt="funny image of learning the line break tool">
     <br><br>
     <sub>this is the ai that's meant to take over the world lol</sub>
-    <br><br>
+    <br><br><button id="hi" onclick="changestyle()">super secret button shh</button><br>
+    <script>
+        let mainstyle = true;
+      function changestyle() {
+        mainstyle = !mainstyle;
+        document.getElementById("theme").href = mainstyle ? "homepage.css" : "homepage_alt.css";
+      }
+    </script>
     
 </main>
 </body>
