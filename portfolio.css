@@ -11,7 +11,7 @@ body {
 main {
   max-width: 48rem;
   padding: 2rem;
-  background: #272013;
+  background: #222b22;
   border: 2px solid #3a3a57;
   border-radius: 8px;
 }
@@ -32,7 +32,7 @@ a:hover {
 }
 
 sub {
-  color: #5997ca
+  color: #598ab3
 }
 
 ul {
@@ -44,7 +44,7 @@ ul {
 }
 
 img {
-    border: 2px solid #35355e;
+    border: 2px solid #515196;
     border-radius:8px
 }
 
@@ -58,7 +58,7 @@ button {
 li {
     margin-left: 3rem;
 }
-/* NOTE: This part was vibecoded, but everything else was done by me */
+/* NOTE: This part was vibecoded, but everything else on this website was done by me */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -67,3 +67,7 @@ li {
   .grid figure { margin: 0; }
   .grid img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; }
   .grid figcaption { padding: 0.5rem 0; }
+#clickable {
+  border: 3px solid #336bb6;
+  border-radius:8px
+}
